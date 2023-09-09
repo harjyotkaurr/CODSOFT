@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #dda882;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: black;
+}
+nav img{
+    height: 10vh;
+    width: 15vw;
+    padding: 15px;
+}
+nav ul li{
+    color: aliceblue;
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    font-size: 20px;
+}
+nav ul li a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 5px;
+    background:#dda882 ;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.about{
+    text-align: center;
+}
+.about h1{
+    padding: 10px;
+    font-family: 'Courgette', cursive;
+    font-family: 'Handjet', cursive;
+    font-size: 40px;
+    font-weight: 600;
+}
+.about h2{
+    font-size: 15px;
+    text-align: right;
+    margin-right: 390px;
+}
+.about iframe{
+    border: 5px solid black;
+}
+.about p{
+    background-color: #f6f4f2;
+    text-align: center;
+    margin: 10px 150px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.services{
+    text-align: center;
+    
+  }
+  .services h1{
+    font-family: 'Courgette', cursive;
+    font-family: 'Handjet', cursive;
+    font-size: 40px;
+    font-weight: 600;
+  }
+  .servicescontainer{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    
+}
+
+  
+  .col{
+    flex-basis: 30%;
+    background-color: #f6f4f2;
+    border-radius: 10%;
+    height: 350px;
+    transition: 1s;
+    }
+    .col:hover{
+        transform: scale(1.2);
+
+    }
+  
+  .col span{
+    color: #4b5668;
+    font-size: 40px;
+    font-weight: 600;
+  }
+  .contact{
+    text-align: center;
+  }
+  .contact p{
+    background-color:#f6f4f2 ;
+    margin: 10px 150px;
+    font-size: 20px;
+    border: 5px solid black;
+  }
+  .contact h1{
+    font-family: 'Courgette', cursive;
+    font-family: 'Handjet', cursive;
+    font-size: 40px;
+    font-weight: 600;
+    
+  }
+  footer{
+    background-color: black; 
+    text-align: center; 
+    color: white;
+    margin: 20px;
+  }
